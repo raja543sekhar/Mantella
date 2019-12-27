@@ -1,6 +1,6 @@
 # Salp
 
-Salp, an easy to learn/use linear algebra library for Javascript.
+Salp is an easy to learn/use linear algebra library for Javascript.
 
 It supports NodeJS as well as browser builds and has no third-party dependencies.
 
