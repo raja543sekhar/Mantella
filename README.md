@@ -84,12 +84,16 @@ Iterators:
 Inplace operations:
 [copyWithin](#copyWithin),
 [inplace](#inplace),
+[inplaceAdd](#inplaceAdd),
 [inplaceCol](#inplaceCol),
+[inplaceDivideElem](#inplaceDivideElem),
+[inplaceMultiplyElem](#inplaceMultiplyElem),
 [inplaceReverse](#inplaceReverse),
 [inplaceRotate](#inplaceRotate),
 [inplaceRow](#inplaceRow),
 [inplaceShuffle](#inplaceShuffle),
-[inplaceSort](#inplaceSort)
+[inplaceSort](#inplaceSort),
+[inplaceSubtract](#inplaceSubtract)
 
 Functional programming:
 [count](#count),
@@ -214,11 +218,14 @@ Trigonometric & hyperbolic functions:
 
 Statistical function:
 [centralMoment](#centralmoment),
-[comulative](#comulative),
+[change](#change),
+[cumulative](#cumulative),
+[cumulativeProduct](#cumulativeProduct),
+[cumulativeSum](#cumulativeSum),
 [correlation](#correlation),
 [covariance](#covariance),
 [decile](#decile),
-[diff](#diff),
+[difference](#difference),
 [histogram](#histogram),
 [interquartileRange](#interquartilerange),
 [kurtosis](#kurtosis),
@@ -252,6 +259,7 @@ Linear algebra:
 [crossProduct](#crossProduct),
 [determinant](#determinant),
 [divide](#divide),
+[divideElem](#divideElem),
 [dotProduct](#dotProduct),
 [eigenDecomposition](#eigenDecomposition),
 [generalisedInverse](#generalisedInverse),
@@ -260,6 +268,7 @@ Linear algebra:
 [kroneckerProduct](#kroneckerProduct),
 [luDecomposition](#luDecomposition),
 [multiply](#multiply),
+[multiplyElem](#multiplyElem),
 [norm](#norm),
 [orthonormalBasis](#orthonormalBasis),
 [qrDecomposition](#qrDecomposition),
