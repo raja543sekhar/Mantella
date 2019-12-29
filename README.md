@@ -320,7 +320,7 @@ Inner functionality:
 
 ### How can I use other data types?
 
-Yes.
+Yes. :blush:
 
 ## Roadmap
 
