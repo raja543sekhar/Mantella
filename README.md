@@ -1,14 +1,19 @@
 # Salp
 
-Salp is an easy to learn/use linear algebra library for JavaScript.
+Salp is a comprehensive and easy to learn/use linear algebra library for JavaScript.
 
-It supports NodeJS as well as browser builds and has no third-party dependencies.
+- It is focused on scientific computing and data science
+- Applicable in both NodeJS and browser builds
+- (Deliberately) similar to [Matlab](https://de.mathworks.com/products/matlab.html) and [NumPy](https://numpy.org/)
+- Supports calculations with integer and floating point numbers
+- Easily extendable with new data types (see [How can I use other data types?]())
 
-If you have a question, problem or feature request, feel free to contact me anytime. The best way (for me) is to use the [Github issue tracker](https://github.com/SebastianNiemann/Mantella/issues).
+Did you find a question, feature request or problem? Then please feel free to contact me at any time. The best way (for me) is to use the [Github issue tracker] (https://github.com/SebastianNiemann/Mantella/issues).
 
-Documentation:
+Table of contents:
 
 1. [API](#api)
+1. [FAQ](#faq)
 1. [Roadmap](#roadmap)
 
 ## API
@@ -310,6 +315,12 @@ Inner functionality:
 [_scalarSubtract](#_scalarSubtract),
 [_scalarMultiply](#_scalarMultiply),
 [_scalarDivide](#_scalarDivide)
+
+## FAQ
+
+### How can I use other data types?
+
+Yes.
 
 ## Roadmap
 
