@@ -342,9 +342,9 @@ However, not all calculations support every data type:
 - All functions that only pass data but do not have to interpret it themselves (e.g. [col](#col), [sample](#sample) or [pushRow](#pushrow)) work fine.
     - This also applies to functions like [inplace](#inplace) or [map](#map), because data is only passed on to the user's function.
 - All mathematical functions expect only integer and floating point numbers.
-- All other functions (e.g. [includes](#includes), [histogram](#histogram) or [setUnion](#setunion)) need at least a reasonable form of equality and/or distance.
+- All other functions (e.g. [includes](#includes), [histogram](#histogram) or [setUnion](#setunion)) need at least a reasonable form of equality or distance.
 
-To support new data types (like the object of longitude and latitude) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual), [_scalarIsLess](#_scalarisless) or [_scalarDistance](#_scalarDistance):
+To support new data types (like coordinates) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual), [_scalarIsLess](#_scalarisless) or [_scalarDistance](#_scalarDistance):
 
 ```js
 const _nativeScalarIsEqual = salp._scalarIsEqual
