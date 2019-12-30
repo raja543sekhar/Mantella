@@ -12,9 +12,19 @@ Did you have a question, a feature request or found a problem? Then please feel 
 
 Table of contents:
 
+1. [Installation](#installation)
+1. [Getting started](#getting-started)
 1. [API](#api)
 1. [FAQ](#faq)
 1. [Roadmap](#roadmap)
+
+## Installation
+
+
+
+## Getting started
+
+
 
 ## API
 
@@ -47,6 +57,7 @@ Layout manipulation:
 [filterCol](#filterCol),
 [filterRow](#filterRow),
 [flat](#flat),
+[groupBy](#groupby),
 [insertCol](#insertcol),
 [insertRow](#insertrow),
 [popCol](#appendcol),
@@ -64,6 +75,7 @@ Layout manipulation:
 [sortRow](#sortRow),
 [spliceCol](#shiftCol),
 [spliceRow](#shiftCol),
+[split](#split),
 [swapCol](#swapCol),
 [swapRow](#swapRow),
 [unshiftCol](#shiftCol),
@@ -342,7 +354,7 @@ However, not all calculations support every data type:
 - All functions that only pass data but do not have to interpret it themselves (e.g. [col](#col), [sample](#sample) or [pushRow](#pushrow)) work fine.
     - This also applies to functions like [inplace](#inplace) or [map](#map), because data is only passed on to the user's function.
 - All mathematical functions expect only integer and floating point numbers.
-- All other functions (e.g. [includes](#includes), [histogram](#histogram) or [setUnion](#setunion)) need at least a reasonable form of equality or distance.
+- All other functions (e.g. [includes](#includes), [histogram](#histogram) or [groupBy](#setunion)) need at least a reasonable form of equality or distance.
 
 To support new data types (like coordinates) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual):
 
