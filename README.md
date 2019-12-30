@@ -347,6 +347,7 @@ However, not all calculations support every data type:
 To support new data types (like coordinates) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual):
 
 ```js
+// Affects only the local instance 'mat'
 mat._scalarIsEqual = (a, b) => {
   if (a instanceof Coordinate && b instanceof Coordinate) {
     // Own implementation
@@ -355,8 +356,7 @@ mat._scalarIsEqual = (a, b) => {
   }
 }
 
-// or globally:
-
+// Affects all instances
 const _nativeScalarIsEqual = Mat.prototype._scalarIsEqual
 Mat.prototype._scalarIsEqual = (a, b) => {
   if (a instanceof Coordinate && b instanceof Coordinate) {
