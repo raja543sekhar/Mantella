@@ -5,7 +5,7 @@ Salp is a comprehensive and easy to learn/use linear algebra library for JavaScr
 - It is focused on scientific computing and data science
 - Applicable in both NodeJS and browser builds
 - (Deliberately) similar to [Matlab](https://de.mathworks.com/products/matlab.html) and [NumPy](https://numpy.org/)
-- Supports vectors and matrices
+- Supports dense vectors and matrices
 - Supports calculations with integer and floating point numbers (see [How can I use other data types?](#how-can-i-use-other-data-types))
 
 Did you have a question, a feature request or found a problem? Then please feel free to contact me at any time. The best way (for me) is to use the [Github issue tracker](https://github.com/SebastianNiemann/Mantella/issues).
@@ -301,7 +301,15 @@ Linear algebra:
 [trace](#trace),
 [transpose](#transpose)
 
+Input:
+[readCOO](#loadcoo),
+[readCSV](#loadcsv),
+[readPGM](#loadpgm)
+
 Output:
+[writeCOO](#savecoo),
+[writeCSV](#savecsv),
+[writePGM](#savepgm),
 [toString](#tostring)
 
 Inner functionality:
