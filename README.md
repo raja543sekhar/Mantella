@@ -148,6 +148,7 @@ Logical functions:
 [isLess](#isless),
 [isLessOrEqual](#islessorequal),
 [isMat](#ismat),
+[isNaN](#isNaN),
 [isPositiveDefinite](#ispositivedefinite),
 [isRow](#isrow),
 [isSquare](#issquare),
@@ -320,7 +321,18 @@ Inner functionality:
 
 ### How can I use other data types?
 
-Yes. :blush:
+Salp can store any type as a data value. Mixed datasets are also possible:
+
+```js
+const mat = new Mat([
+  // city, area [km^2], coordinates, some districts
+  ['Berlin', 891.1, { lat: 52.517, lng: 13.389 }, ['Mitte', 'Spandau']],
+  ['Hamburg', 755.2, { lat: 53.565, lng: 10.001 }, ['Altona', 'Harburg']],
+  // ...
+])
+```
+
+
 
 ## Roadmap
 
