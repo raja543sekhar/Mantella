@@ -49,6 +49,7 @@ Creation:
 [sample](#sample),
 [sequence](#sequence),
 [upperTriangular](#uppertriangular),
+[ungroup](#ungroup),
 [zeros](#zeros)
 
 Layout manipulation:
