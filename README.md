@@ -164,10 +164,8 @@ Logical functions:
 [isLessOrEqual](#islessorequal),
 [isMat](#ismat),
 [isNaN](#isNaN),
-[isPositiveDefinite](#ispositivedefinite),
 [isRow](#isrow),
 [isSquare](#issquare),
-[isSymmetric](#issymmetric),
 [isVector](#isvector)
 
 Basic mathematical functions:
