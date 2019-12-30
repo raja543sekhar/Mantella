@@ -324,16 +324,16 @@ Inner functionality:
 Salp can store any type as a data value. Mixed datasets are also possible:
 
 ```js
-const mat = new Mat([
+const cities = new Mat([
   // city, area [km^2], coordinates, some districts
   ['Berlin', 891.1, { lat: 52.517, lng: 13.389 }, ['Mitte', 'Spandau']],
   ['Hamburg', 755.2, { lat: 53.565, lng: 10.001 }, ['Altona', 'Harburg']],
   // ...
 ])
 
-mat.col(0).includes('Berlin')
+cities.col(0).includes('Berlin')
 // true
-mat.col(1).mean()
+cities.col(1).mean()
 // 823.15
 ```
 
@@ -347,8 +347,8 @@ However, not all calculations support every data type:
 To support new data types (like coordinates) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual):
 
 ```js
-// Affects only the local instance 'mat'
-mat._scalarIsEqual = (a, b) => {
+// Affects only the local instance
+cities._scalarIsEqual = (a, b) => {
   if (a instanceof Coordinate && b instanceof Coordinate) {
     // Own implementation
   } else {
