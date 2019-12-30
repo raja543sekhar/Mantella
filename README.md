@@ -352,7 +352,7 @@ cities._scalarIsEqual = (a, b) => {
   if (a instanceof Coordinate && b instanceof Coordinate) {
     // Own implementation
   } else {
-    return mat.__proto__._scalarIsEqual(...arguments)
+    return cities.__proto__._scalarIsEqual(...arguments)
   }
 }
 
