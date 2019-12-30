@@ -148,7 +148,7 @@ Functional programming:
 [unshift](#unshift)
 
 Logical functions:
-[hasInf](#hasinf),
+[hasInfinite](#hasinf),
 [hasNaN](#hasnan),
 [hasNull](#hasnull),
 [includes](#includes),
