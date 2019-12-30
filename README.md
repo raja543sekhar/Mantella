@@ -344,7 +344,7 @@ However, not all calculations support every data type:
 - All mathematical functions expect only integer and floating point numbers.
 - All other functions (e.g. [includes](#includes), [histogram](#histogram) or [setUnion](#setunion)) need at least a reasonable form of equality or distance.
 
-To support new data types (like coordinates) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual), [_scalarIsLess](#_scalarisless) or [_scalarDistance](#_scalarDistance):
+To support new data types (like coordinates) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual):
 
 ```js
 const _nativeScalarIsEqual = salp._scalarIsEqual
