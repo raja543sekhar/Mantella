@@ -358,6 +358,8 @@ salp._scalarIsEqual = (a, b) => {
 }
 ```
 
+If you are unsure what you would need to add/expand in order to support your data type, feel free to [ask](https://github.com/SebastianNiemann/Mantella/issues/new) anytime.
+
 ## Roadmap
 
 - Support of basic matrix functionality
