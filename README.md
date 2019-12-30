@@ -347,13 +347,22 @@ However, not all calculations support every data type:
 To support new data types (like coordinates) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual):
 
 ```js
-const _nativeScalarIsEqual = salp._scalarIsEqual
-
-salp._scalarIsEqual = (a, b) => {
+mat._scalarIsEqual = (a, b) => {
   if (a instanceof Coordinate && b instanceof Coordinate) {
     // Own implementation
   } else {
-    return _nativeScalarIsEqual(...arguments);
+    return mat.__proto__._scalarIsEqual(...arguments)
+  }
+}
+
+// or globally:
+
+const _nativeScalarIsEqual = Mat.prototype._scalarIsEqual
+Mat.prototype._scalarIsEqual = (a, b) => {
+  if (a instanceof Coordinate && b instanceof Coordinate) {
+    // Own implementation
+  } else {
+    return _nativeScalarIsEqual(...arguments)
   }
 }
 ```
