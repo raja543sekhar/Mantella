@@ -353,7 +353,7 @@ salp._scalarIsEqual = (a, b) => {
   if (a instanceof Coordinate && b instanceof Coordinate) {
     // Own implementation
   } else {
-    return _nativeScalarIsEqual(a, b);
+    return _nativeScalarIsEqual(...arguments);
   }
 }
 ```
