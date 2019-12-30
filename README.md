@@ -330,9 +330,33 @@ const mat = new Mat([
   ['Hamburg', 755.2, { lat: 53.565, lng: 10.001 }, ['Altona', 'Harburg']],
   // ...
 ])
+
+mat.col(0).includes('Berlin')
+// true
+mat.col(1).mean()
+// 823.15
 ```
 
+However, not all calculations support every data type:
 
+- All functions that only pass data but do not have to interpret it themselves (e.g. [col](#col), [sample](#sample) or [pushRow](#pushrow)) work fine.
+    - This also applies to functions like [inplace](#inplace) or [map](#map), because data is only passed on to the user's function.
+- All mathematical functions expect only integer and floating point numbers.
+- All other functions (e.g. [includes](#includes), [histogram](#histogram) or [setUnion](#setunion)) need at least a reasonable form of equality and/or distance.
+
+To support new data types (like the object of longitude and latitude) it is therefore sometimes necessary to extend internal calculations like [_scalarIsEqual](#_scalarIsEqual), [_scalarIsLess](#_scalarisless) or [_scalarDistance](#_scalarDistance):
+
+```js
+const _nativeScalarIsEqual = salp._scalarIsEqual
+
+salp._scalarIsEqual = (a, b) => {
+  if (a instanceof Coordinate && b instanceof Coordinate) {
+    // Own implementation
+  } else {
+    return _nativeScalarIsEqual(a, b);
+  }
+}
+```
 
 ## Roadmap
 
@@ -344,8 +368,10 @@ const mat = new Mat([
 - Support of statistical functions
 - Support of set operations
 - Support of decompositions, factorisations, inversions and equation solvers
+- Support of similarity metrics
 - Support of complex numbers
 - Support of datetime values
+- Support of coordinates
 - Acceleration of BLAS/LAPACK-like operations with WebAssembly
 
 ---
