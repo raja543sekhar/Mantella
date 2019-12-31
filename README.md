@@ -35,7 +35,7 @@ Salp supports the latest two LTS versions of NodeJS.
 
 ### Browser
 
-For browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)), a pre-built version is available.
+For browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)), a pre-compiled version is available.
 
 [![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
 
