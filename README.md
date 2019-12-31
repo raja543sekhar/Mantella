@@ -37,7 +37,7 @@ Salp supports the last two long-term support versions of NodeJS by default.
 
 For browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) another version is available.
 
-> Da viele Teams jedoch sehr unterschiedliche Anforderungen an den Browser-Support haben, rate ich eher dazu das NPM-Paket zu verwenden und selbst mittels [Babel](https://babeljs.io) eine passende Version zu erzeugen.
+> Since many teams have very different requirements for browser support, I recommend to use the NPM package and create a suitable version yourself using [Babel](https://babeljs.io).
 
 [![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
 
