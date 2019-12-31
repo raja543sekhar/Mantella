@@ -23,7 +23,7 @@ Table of contents:
 
 Salp supports the latest two LTS versions of NodeJS and Browsers with >0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) by default.
 
-If you need to support other browsers or NodeJS versions, I can recommend [Babel](https://babeljs.io) to compile a suitable browser version according to your own requirements.
+> If you need to support other browsers or NodeJS versions, I can recommend [Babel](https://babeljs.io) to compile a suitable browser version according to your own requirements.
 
 #### Module bundlers & NodeJS
 
