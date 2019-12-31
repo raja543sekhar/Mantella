@@ -23,7 +23,7 @@ Table of contents:
 
 #### Module bundlers & NodeJS
 
-Using the [NPM package](https://www.npmjs.com/package/salp) is the recommended installation method.
+Using the [NPM package](https://www.npmjs.com/package/salp) is the recommended installation method for both frontends and backends.
 
 Salp supports the latest two LTS versions of NodeJS by default.
 
@@ -52,7 +52,7 @@ Alternatively, if it is not automatically detected, the explicit form can be use
 
 #### HTML embedding
 
-There are two options for the direct embedding in HTML pages.
+Besides the generation of a frontend version [via a module bundler](#module-bundlers--nodejs), there are two options for direct embedding in HTML pages.
 
 Modern browsers with `<script type="module">` support can `import` Salp directly from a content delivery network (CDN):
 
