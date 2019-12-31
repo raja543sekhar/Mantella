@@ -48,6 +48,8 @@ const salp = require('salp')
 // const salp = require('salp/dist/salp.cjs.js') (alternative, explicit form)
 ```
 
+Alternatively, the explicit form can be used to load the corresponding variant.
+
 #### HTML embedding
 
 There are two options for the direct embedding in HTML pages.
