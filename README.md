@@ -21,11 +21,13 @@ Table of contents:
 
 ### Installation
 
+Salp supports the latest two LTS versions of NodeJS and Browsers with >0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) by default.
+
+If you need to support other browsers, I can recommend [Babel](https://babeljs.io) to compile a suitable browser version according to your own requirements.
+
 #### Module bundlers & NodeJS
 
 Using the [NPM package](https://www.npmjs.com/package/salp) is the recommended installation method for both frontends and backends.
-
-Salp supports the latest two LTS versions of NodeJS by default.
 
 [![NPM](https://img.shields.io/npm/v/salp?style=flat-square
 )](https://www.npmjs.com/package/salp)
@@ -54,7 +56,7 @@ Alternatively, if it is not automatically detected, the explicit form can be use
 
 Besides the generation of a frontend version [via a module bundler](#module-bundlers--nodejs), there are two options for direct embedding in HTML pages.
 
-Modern browsers with `<script type="module">` [support](https://caniuse.com/#feat=es6-module) can `import` Salp directly from a content delivery network (CDN):
+Modern browsers with ES6 module support can `import` Salp directly from a content delivery network (CDN):
 
 [![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
 
@@ -66,7 +68,7 @@ import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 <script>
 ```
 
-Alternatively, for browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) and no ES6 module support, a precompiled IIFE variant is available:
+Alternatively, for browsers with no ES6 module support, a precompiled IIFE variant is available:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.browser.js"></script>
@@ -76,8 +78,6 @@ const salp = window.salp
 // ... your source code
 </script>
 ```
-
-For productive purposes, however, I recommend the NPM package and the creation of a suitable browser version according to your own requirements, with [Babel](https://babeljs.io) and the module bundler of your choice.
 
 ### Loading data & creating matrices
 
