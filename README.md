@@ -8,7 +8,7 @@ Salp is a comprehensive and easy to learn/use linear algebra library for JavaScr
 - Supports dense vectors and matrices
 - Supports calculations with integer and floating point numbers (see [How can I use other data types?](#how-can-i-use-other-data-types))
 
-Did you have a question, a feature request or found a problem? Then please feel free to contact me at any time. The best way (for me) is to use the [Github issue tracker](https://github.com/SebastianNiemann/Mantella/issues).
+Do you have a question, a feature request or found a problem? Then please feel free to contact me at any time. The best way (for me) is to use the [Github issue tracker](https://github.com/SebastianNiemann/Mantella/issues).
 
 Table of contents:
 
@@ -461,7 +461,7 @@ Mat.prototype._scalarIsEqual = (a, b) => {
 }
 ```
 
-If you are unsure what you would need to add/expand in order to support your data type, feel free to [ask](https://github.com/SebastianNiemann/Mantella/issues/new) anytime.
+If you are unsure what you would need to add/expand in order to support your data type, feel free to [ask me](https://github.com/SebastianNiemann/Mantella/issues/new) anytime.
 
 ## Roadmap
 
