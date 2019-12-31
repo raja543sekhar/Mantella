@@ -77,7 +77,7 @@ const salp = window.salp
 </script>
 ```
 
-Since many teams have very different browser support requirements, I recommend the NPM package and creating a suitable browser version yourself, using [Babel](https://babeljs.io) and the module bundler of your choice.
+However, since many teams have very different browser support requirements, I recommend the NPM package and creating a suitable browser version yourself, using [Babel](https://babeljs.io) and the module bundler of your choice.
 
 ### Loading data & creating matrices
 
