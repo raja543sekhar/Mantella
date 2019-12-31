@@ -69,7 +69,7 @@ const magicSquare = new Mat([
 
 ```
 
-### Storing your results
+### Saving your results
 
 ```js
 
