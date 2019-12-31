@@ -12,17 +12,20 @@ Did you have a question, a feature request or found a problem? Then please feel 
 
 Table of contents:
 
-1. [Installation](#installation)
 1. [Getting started](#getting-started)
 1. [API](#api)
 1. [FAQ](#faq)
 1. [Roadmap](#roadmap)
 
-## Installation
+## Getting started
 
-### NPM & Yarn
+### Installation
+
+#### Module bundlers & NodeJS
 
 Using the [NPM package](https://www.npmjs.com/package/salp) is the recommended installation method.
+
+Salp supports the latest two LTS versions of NodeJS by default.
 
 [![NPM](https://img.shields.io/npm/v/salp?style=flat-square
 )](https://www.npmjs.com/package/salp)
@@ -31,27 +34,48 @@ Using the [NPM package](https://www.npmjs.com/package/salp) is the recommended i
 npm install salp
 ```
 
-Salp supports the latest two LTS versions of NodeJS.
-
-### Browser
-
-For browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) a pre-compiled version is available.
-
-[![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
-
-```html
-<script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.browser.js"></script>
-```
-
-Since many teams have very different requirements for browser support, I recommend to use the NPM package and create a suitable browser version yourself using [Babel](https://babeljs.io).
-
-## Getting started
-
-### Setup
+Most module bundlers support both `main` and the unofficial `module` field of Salp's `package.json`, which will automatically load the correct version depending on whether you use `import` (ES6 module)
 
 ```js
 import salp from 'salp'
+// import salp from 'salp/dist/salp.js' (alternative, explicit form)
 ```
+
+or `require` (CommonJS):
+
+```js
+const salp = require('salp')
+// const salp = require('salp/dist/salp.cjs.js') (alternative, explicit form)
+```
+
+#### HTML embedding
+
+There are two options for the direct embedding in HTML pages.
+
+Modern browsers with `<script type="module">` support can `import` Salp directly from a content delivery network (CDN):
+
+[![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
+
+```js
+<script type="module"></script>
+import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
+
+// ... your source code
+<script>
+```
+
+Alternatively, for browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) and no ES6 module support, an IIFE variant is available:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.browser.js"></script>
+<script>
+const salp = window.salp
+
+// ... your source code
+</script>
+```
+
+Since many teams have very different requirements for browser support, I recommend to use the NPM package and create a suitable browser version yourself using [Babel](https://babeljs.io) and the module bundler of your choice.
 
 ### Loading data & creating matrices
 
