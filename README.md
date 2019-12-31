@@ -351,14 +351,14 @@ Linear algebra:
 [transpose](#transpose)
 
 Input:
-[readCOO](#loadcoo),
-[readCSV](#loadcsv),
-[readPGM](#loadpgm)
+[fromCOO](#loadcoo),
+[fromCSV](#loadcsv),
+[fromPGM](#loadpgm)
 
 Output:
-[writeCOO](#savecoo),
-[writeCSV](#savecsv),
-[writePGM](#savepgm),
+[toCOO](#tocoo),
+[toCSV](#tocsv),
+[toPGM](#topgm),
 [toString](#tostring)
 
 Inner functionality:
