@@ -34,7 +34,7 @@ Salp supports the latest two LTS versions of NodeJS by default.
 npm install salp
 ```
 
-Most module bundlers support both `main` and the unofficial `module` field of Salp's `package.json`, which will automatically load the correct version depending on whether you use `import` (ES6 module)
+Most module bundler resolvers support both `main` and the unofficial `module` field of Salp's `package.json`, which will automatically load the correct version depending on whether you use `import` (ES6 module)
 
 ```js
 import salp from 'salp'
@@ -47,6 +47,8 @@ or `require` (CommonJS):
 const salp = require('salp')
 // const salp = require('salp/dist/salp.cjs.js') (alternative, explicit form)
 ```
+
+
 
 #### HTML embedding
 
@@ -98,6 +100,8 @@ const magicSquare = new Mat([
 ```js
 
 ```
+
+### Debugging
 
 ## API
 
