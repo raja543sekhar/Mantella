@@ -48,7 +48,7 @@ const salp = require('salp')
 // const salp = require('salp/dist/salp.cjs.js') (alternative, explicit form)
 ```
 
-
+Alternatively, the explicit form can be used to choose the correct variant.
 
 #### HTML embedding
 
