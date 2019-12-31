@@ -71,7 +71,7 @@ import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 Alternatively, for browsers with no ES6 module support, a precompiled IIFE variant is available:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.browser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.iife.js"></script>
 <script>
 const salp = window.salp
 
