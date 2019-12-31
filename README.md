@@ -103,6 +103,10 @@ const magicSquare = new Mat([
 
 ### Debugging
 
+```js
+
+```
+
 ## API
 
 Fields:
