@@ -47,19 +47,33 @@ For browsers with > 0.5% market share (based on [Browserslist](https://browserl.
 
 ## Getting started
 
+### Setup
+
 ```js
 import salp from 'salp'
+```
 
+### Loading data & creating matrices
 
-
+```js
 const myMatrix = new Mat([
-  [1, ]
-  []
-  []
+  [8, 1, 6],
+  [3, 5, 7],
+  [4, 9, 2],
 ])
 ```
 
+### Calculations & data analysis
 
+```js
+
+```
+
+### Storing your results
+
+```js
+
+```
 
 ## API
 
