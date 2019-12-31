@@ -64,7 +64,7 @@ import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 <script>
 ```
 
-Alternatively, for browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) and no ES6 module support, a precompiled IIFE variant is provided:
+Alternatively, for browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) and no ES6 module support, a precompiled IIFE variant is available:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.browser.js"></script>
