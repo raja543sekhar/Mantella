@@ -4,7 +4,7 @@ Salp is a comprehensive and easy to learn/use linear algebra library for JavaScr
 
 - It is focused on scientific computing and data science
 - Applicable in both NodeJS and browser builds
-- (Deliberately) similar to [Matlab](https://de.mathworks.com/products/matlab.html) and [NumPy](https://numpy.org/)
+- (Deliberately) similar to [Matlab](https://de.mathworks.com/products/matlab.html) and [NumPy](https://numpy.org)
 - Supports dense vectors and matrices
 - Supports calculations with integer and floating point numbers (see [How can I use other data types?](#how-can-i-use-other-data-types))
 
@@ -20,9 +20,44 @@ Table of contents:
 
 ## Installation
 
+### NPM & Yarn
 
+Using the [NPM package](https://www.npmjs.com/package/salp) is the recommended installation method.
+
+[![NPM](https://img.shields.io/npm/v/salp?style=flat-square
+)](https://www.npmjs.com/package/salp)
+
+```
+npm install salp
+```
+
+Salp supports the last two long-term support versions of NodeJS by default.
+
+### Browser
+
+For browsers with > 0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) another version is available.
+
+> Da viele Teams jedoch sehr unterschiedliche Anforderungen an den Browser-Support haben, rate ich eher dazu das NPM-Paket zu verwenden und selbst mittels [Babel](https://babeljs.io) eine passende Version zu erzeugen.
+
+[![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.browser.js"></script>
+```
 
 ## Getting started
+
+```js
+import salp from 'salp'
+
+
+
+const myMatrix = new Mat([
+  [1, ]
+  []
+  []
+])
+```
 
 
 
