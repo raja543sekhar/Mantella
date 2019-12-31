@@ -56,7 +56,7 @@ import salp from 'salp'
 ### Loading data & creating matrices
 
 ```js
-const myMatrix = new Mat([
+const magicSquare = new Mat([
   [8, 1, 6],
   [3, 5, 7],
   [4, 9, 2],
