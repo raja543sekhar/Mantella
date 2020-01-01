@@ -40,6 +40,8 @@ Most module bundler resolvers support both `main` and the unofficial `module` fi
 ```js
 import salp from 'salp'
 // import salp from 'salp/dist/salp.js' // (alternative, explicit form)
+
+// ... your source code
 ```
 
 or `require` (CommonJS):
@@ -47,6 +49,8 @@ or `require` (CommonJS):
 ```js
 const salp = require('salp')
 // const salp = require('salp/dist/salp.cjs.js') // (alternative, explicit form)
+
+// ... your source code
 ```
 
 Alternatively, if it is not automatically detected, the explicit form can be used to choose the correct variant manually.
