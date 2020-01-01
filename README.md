@@ -150,7 +150,17 @@ matrix = matrix.transpose()
 ### Calculations & data analysis
 
 - calculations
+
+```js
+
+```
+
 - pipeline
+
+```js
+
+```
+
 - statistics
 
 ```js
@@ -160,34 +170,39 @@ matrix = matrix.transpose()
 ### Saving your results
 
 - toCSV
-- raw
 
 ```js
 import fs from 'fs'
 
-
+matrix = new salp.Mat([
+  [8, 1, 6],
+  [3, 5, 7],
+  [4, 9, 2],
+])
 
 fs.writeFileSync('./data.csv', matrix.toCSV())
 ```
 
-```js
+- raw
 
+```js
+matrix._raw
+// [8, 3, 4, 1, 5, 9, 6, 7, 2]
 ```
 
 ### Troubleshooting
+
+- Console
 
 ```js
 console.log(matrix.toString())
 // console.log(String(matrix)) // (alternative)
 ```
 
-```js
-salp._verbosity = ['errors', 'warnings', 'notices']
-```
 - verbosity
 
 ```js
-
+salp._verbosity = ['errors', 'warnings', 'notices']
 ```
 
 ### Advanced functionality
