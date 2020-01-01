@@ -83,7 +83,7 @@ Alternatively, for browsers with no ES6 module support, a precompiled [IIFE](htt
 
 ## Getting started
 
-Welcome, in the following you will learn about common use cases and concepts for getting started with Salp:
+In the following you will learn about common use cases and concepts for getting started with Salp:
 
 - [Loading data & creating matrices](#loading-data--creating-matrices)
 - [Calculations & data analysis](#calculations--data-analysis)
@@ -94,16 +94,56 @@ For a complete list of all functions, see the [API documentation](#api).
 
 ### Loading data & creating matrices
 
-- file
-- array (other libs)
+- file (e.g. csv)
+
+```js
+import fs from 'fs'
+
+data = fs.readFileSync('data.csv', 'utf8')
+matrix = salp.fromCSV(data)
+```
+
 - arrayOfArray (database)
 
 ```js
-const magicSquare = new Mat([
+// Could be the result of a database request
+data = [
   [8, 1, 6],
   [3, 5, 7],
   [4, 9, 2],
-])
+]
+
+matrix = new salp.Mat(data)
+```
+
+```js
+data = [[8, 1, 6]]
+rowVector = new salp.Mat(data)
+```
+
+- array (other libs)
+
+```js
+data = [8, 1, 6, 3, 5, 7, 4, 9, 2]
+colVector = new salp.Mat(data)
+```
+
+```js
+matrix = colVector.resize(3, 3) // rows, cols
+// [
+//   [8, 3, 4],
+//   [1, 5, 9],
+//   [6, 7, 2],
+// ]
+```
+
+```js
+matrix = matrix.transpose()
+// [
+//   [8, 1, 6],
+//   [3, 5, 7],
+//   [4, 9, 2],
+// ]
 ```
 
 ### Calculations & data analysis
