@@ -148,9 +148,8 @@ matrix = matrix.transpose()
 
 ### Calculations & data analysis
 
-- pipeline
 - calculations
-- map/reduce
+- pipeline
 - statistics
 
 ```js
@@ -163,13 +162,34 @@ matrix = matrix.transpose()
 - raw
 
 ```js
+import fs from 'fs'
+
+
+
+fs.writeFileSync('./data.csv', matrix.toCSV())
+```
+
+```js
 
 ```
 
 ### Troubleshooting
 
-- toString
+```js
+console.log(matrix.toString())
+// console.log(String(matrix)) // (alternative)
+```
+
+```js
+salp._verbosity = ['errors', 'warnings', 'notices']
+```
 - verbosity
+
+```js
+
+```
+
+### Advanced functionality
 
 ```js
 
