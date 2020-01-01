@@ -59,7 +59,7 @@ Modern browsers with ES6 module support can `import` Salp directly from a conten
 
 [![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
 
-```js
+```html
 <script type="module"></script>
 import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 
