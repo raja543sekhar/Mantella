@@ -90,7 +90,7 @@ Welcome, in the following you will learn about common use cases and concepts for
 - [Saving your results](#saving-your-results)
 - [Troubleshooting](#troubleshooting)
 
-For a complete list of all functions, see the API documentation.
+For a complete list of all functions, see the [API documentation](#api).
 
 ### Loading data & creating matrices
 
