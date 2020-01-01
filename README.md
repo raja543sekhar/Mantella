@@ -12,20 +12,19 @@ Do you have a question, a feature request or found a problem? Then please feel f
 
 Table of contents:
 
+1. [Installation](#installation)
 1. [Getting started](#getting-started)
 1. [API](#api)
 1. [FAQ](#faq)
 1. [Roadmap](#roadmap)
 
-## Getting started
-
-### Installation
+## Installation
 
 Salp supports the latest two LTS versions of NodeJS and Browsers with >0.5% market share (based on [Browserslist](https://browserl.ist/?q=%3E+0.5%25)) by default.
 
 > If you need to support other/older browsers or NodeJS versions, I can recommend [Babel](https://babeljs.io) to compile a suitable version according to your own requirements.
 
-#### Module bundlers & NodeJS
+### Module bundlers & NodeJS
 
 Using the [NPM package](https://www.npmjs.com/package/salp) is the recommended installation method for both frontends and backends.
 
@@ -52,7 +51,7 @@ const salp = require('salp')
 
 Alternatively, if it is not automatically detected, the explicit form can be used to choose the correct variant manually.
 
-#### HTML embedding
+### HTML embedding
 
 Besides the generation of a frontend version [via a module bundler](#module-bundlers--nodejs), there are two options for direct embedding in HTML pages.
 
@@ -78,6 +77,8 @@ const salp = window.salp
 // ... your source code
 </script>
 ```
+
+## Getting started
 
 ### Loading data & creating matrices
 
