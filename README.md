@@ -60,11 +60,11 @@ Modern browsers with ES6 module support can `import` Salp directly from a conten
 [![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
 
 ```html
-<script type="module"></script>
+<script type="module">
 import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 
 // ... your source code
-<script>
+</script>
 ```
 
 Alternatively, for browsers with no ES6 module support, a precompiled IIFE variant is available:
