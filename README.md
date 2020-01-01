@@ -83,7 +83,14 @@ Alternatively, for browsers with no ES6 module support, a precompiled [IIFE](htt
 
 ## Getting started
 
-- To get started, some common use cases/concepts
+Welcome, in the following you will learn about common use cases and concepts for getting started with Salp:
+
+- [Loading data & creating matrices](#loading-data--creating-matrices)
+- [Calculations & data analysis](#calculations--data-analysis)
+- [Saving your results](#saving-your-results)
+- [Troubleshooting](#troubleshooting)
+
+For a complete list of all functions, see the API documentation.
 
 ### Loading data & creating matrices
 
@@ -119,7 +126,7 @@ const magicSquare = new Mat([
 
 ```
 
-### Debugging
+### Troubleshooting
 
 - toString
 - verbosity
