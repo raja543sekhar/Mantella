@@ -83,7 +83,7 @@ Alternatively, for browsers with no ES6 module support, a precompiled IIFE varia
 
 ## Getting started
 
-- To get started, some common use cases
+- To get started, some common use cases/concepts
 
 ### Loading data & creating matrices
 
