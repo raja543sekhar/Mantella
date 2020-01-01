@@ -70,7 +70,7 @@ import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 Alternatively, for browsers with no ES6 module support, a precompiled IIFE variant is available:
 
 ```html
-<!-- Adds a globally accessible variable, called 'salp' -->
+<!-- Adds a globally accessible variable (being the module object), named 'salp' -->
 <script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.iife.js"></script>
 <script>
 // ... your source code
