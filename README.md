@@ -59,7 +59,7 @@ Alternatively, if it is not automatically detected, the explicit form can be use
 
 Besides the generation of a frontend version [via a module bundler](#module-bundlers--nodejs), there are two options for direct embedding in HTML pages.
 
-Modern browsers with ES6 module support can `import` Salp directly from a content delivery network (CDN):
+Modern browsers with [ES6 module support](https://caniuse.com/#feat=es6-module) can `import` Salp directly from a content delivery network (CDN):
 
 [![jsDelivr](https://img.shields.io/npm/v/salp?label=jsdelivr&style=flat-square)](https://cdn.jsdelivr.net/npm/salp@latest/dist/)
 
@@ -71,7 +71,7 @@ import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 </script>
 ```
 
-Alternatively, for browsers with no ES6 module support, a precompiled IIFE variant is available:
+Alternatively, for browsers with no ES6 module support, a precompiled [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) variant is available:
 
 ```html
 <!-- Adds a globally accessible variable (being the module object), named 'salp' -->
