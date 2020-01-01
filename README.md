@@ -89,6 +89,7 @@ In the following you will learn about common use cases and concepts for getting 
 - [Calculations & data analysis](#calculations--data-analysis)
 - [Saving your results](#saving-your-results)
 - [Troubleshooting](#troubleshooting)
+- [Advanced functionality](#advanced-functionality)
 
 For a complete list of all functions, see the [API documentation](#api).
 
