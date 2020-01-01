@@ -81,6 +81,10 @@ const salp = window.salp
 
 ### Loading data & creating matrices
 
+- file
+- array (other libs)
+- arrayOfArray (database)
+
 ```js
 const magicSquare = new Mat([
   [8, 1, 6],
@@ -91,17 +95,28 @@ const magicSquare = new Mat([
 
 ### Calculations & data analysis
 
+- pipeline
+- calculations
+- map/reduce
+- statistics
+
 ```js
 
 ```
 
 ### Saving your results
 
+- toCSV
+- raw
+
 ```js
 
 ```
 
 ### Debugging
+
+- toString
+- verbosity
 
 ```js
 
