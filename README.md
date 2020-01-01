@@ -39,14 +39,14 @@ Most module bundler resolvers support both `main` and the unofficial `module` fi
 
 ```js
 import salp from 'salp'
-// import salp from 'salp/dist/salp.js' (alternative, explicit form)
+// import salp from 'salp/dist/salp.js' // (alternative, explicit form)
 ```
 
 or `require` (CommonJS):
 
 ```js
 const salp = require('salp')
-// const salp = require('salp/dist/salp.cjs.js') (alternative, explicit form)
+// const salp = require('salp/dist/salp.cjs.js') // (alternative, explicit form)
 ```
 
 Alternatively, if it is not automatically detected, the explicit form can be used to choose the correct variant manually.
@@ -70,10 +70,9 @@ import salp from 'https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.js'
 Alternatively, for browsers with no ES6 module support, a precompiled IIFE variant is available:
 
 ```html
+<!-- Adds a globally accessible variable, called 'salp' -->
 <script src="https://cdn.jsdelivr.net/npm/salp@latest/dist/salp.iife.js"></script>
 <script>
-const salp = window.salp
-
 // ... your source code
 </script>
 ```
