@@ -590,7 +590,3 @@ If you are unsure what you would need to add/expand in order to support your dat
 - Support of datetime values
 - Support of coordinates
 - Acceleration of BLAS/LAPACK-like operations with WebAssembly
-
----
-
-Distributed under [MIT license](http://opensource.org/licenses/MIT).
