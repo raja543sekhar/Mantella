@@ -213,6 +213,13 @@ salp._verbosity = ['errors', 'warnings', 'notices']
 
 ## API
 
+
+- tail
+- head
+- rolling
+- expanding
+
+
 Fields:
 [nCol](#ncol),
 [nElem](#nelem),
