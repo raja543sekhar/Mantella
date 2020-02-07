@@ -317,7 +317,6 @@ Functional programming:
 [forEach](#foreach),
 [forEachCol](#foreachrol),
 [forEachRow](#foreachrow),
-[indexOf](#indexof),
 [join](#join),
 [lastIndexOf](#lastindexof),
 [map](#map),
@@ -458,10 +457,14 @@ Statistical function:
 
 Set operations:
 [setDifference](#setdifference),
+[setDifferenceIndex](#setdifferenceindex),
 [setIntersect](#setintersect),
+[setIntersectIndex](#setintersectindex),
 [setSymmetricDifference](#setsymmetricdifference),
+[setSymmetricDifferenceIndex](#setsymmetricdifferenceindex),
 [setUnion](#setunion),
-[unique](#unique)
+[unique](#unique),
+[duplicates](#duplicates)
 
 Linear algebra:
 [add](#add),
